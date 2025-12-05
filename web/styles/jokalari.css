@@ -85,40 +85,7 @@ nav a:hover {
   filter: brightness(80%);
 }
 
-/* Hay que hacer lo mismo para todos los jugadores*/
 
-
-.Jokalaria2 { 
-  position:relative; 
-  display: inline-block;
-}
-
-.Jokalaria2 .info{ 
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  opacity: 4;
-  text-shadow: 2px 2px 5px rgb(4, 40, 245);
-
-  transition: opacity 0.3s ease;
-}
-.Jokalaria2 .img{
-  width: 100%;
-  display: block;
-  transition: transform 0.4s ease;
-}
-.Jokalaria2:hover .info {
-    top: 70%;
-    transition: 0.5s ease;
-    opacity: 0.5;
-}
-.Jokalaria2:hover img {
-  filter: brightness(80%);
-}
 h1{
   text-align: center;
   color: var(--bg-color);
