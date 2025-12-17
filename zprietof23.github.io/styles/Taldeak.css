@@ -1,0 +1,73 @@
+:root {
+    /* Koloreak Dark Moderako eta zure eskakizunetarako egokitu dira */
+    --primary-color: #b9b9b9;
+    --secondary-color: #00ff88;
+    --text-color: #ffffff;
+    --light-color: #414141;
+    --bg-color: #121212;
+    --border-radius: 12px;
+}
+
+/* Talde guztiak: Estilo komunak (beharrezkoa balitz) */
+.Heretics, .G2, .Faze, .MadLions {
+    border-radius: var(--border-radius); /* Ertz biribilduak */
+    padding: 10px;
+    background-color: rgba(45, 45, 45, 0.5);
+}
+
+/* Hover efektuak hobetu eta kolore berrietara egokitu */
+.Heretics:hover { 
+ transition: box-shadow 0.2s ease, transform 0.2s ease;
+ box-shadow: 0 0 15px 3px  #ff4444;
+ transform: translateY(-5px);
+}
+
+.G2:hover { 
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 0 15px 3px #3b80ff;
+    transform: translateY(-5px);
+}
+
+.Faze:hover {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 0 15px 3px var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+.MadLions:hover { 
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 0 15px 3px #f3e309;
+    transform: translateY(-5px);
+}
+
+.Taldeak {
+    display: grid;
+    gap: 30px; /* Tartea handiagoa, itxura garbiagoa */
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin: 50px auto;
+}
+    
+.Heretics {
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.G2 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.Faze {
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.MadLions {
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
